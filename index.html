@@ -1,1 +1,358 @@
 
+<!DOCTYPE html>
+<html lang="my" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="neXa - မြန်မာ SME များအတွက် Website Builder၊ Order Management နှင့် Automation ပါဝင်သော Digital Business Operating Platform">
+    <title>neXa — Digital Business Operating Platform for Myanmar SMEs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class="nx-body">
+
+    <aside class="nx-announcement-bar">
+        <div class="nx-container flex items-center justify-center gap-2 text-xs sm:text-sm py-2">
+            <span class="nx-badge">New</span>
+            <span>မြန်မာ SME များအတွက် ၁၄ ရက် အခမဲ့ စမ်းသုံးခွင့် ရယူပါ</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </div>
+    </aside>
+
+    <header class="nx-header sticky top-0 z-50">
+        <div class="nx-container flex items-center justify-between h-20">
+            <a href="#" class="nx-brand-logo flex items-center gap-2">
+                <span class="nx-logo-box">nX</span>
+                <span class="nx-logo-text">neXa</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#features" class="nx-nav-link">လုပ်ဆောင်ချက်များ</a>
+                <a href="#templates" class="nx-nav-link">တမ်းပလိတ်များ</a>
+                <a href="#how-it-works" class="nx-nav-link">အသုံးပြုပုံ</a>
+                <a href="#pricing" class="nx-nav-link">ဈေးနှုန်းများ</a>
+                <a href="#faq" class="nx-nav-link">မေးလေ့ရှိသည်များ</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#login" class="nx-btn-ghost">ဝင်ရောက်ရန်</a>
+                <a href="#signup" class="nx-btn-primary">စတင်အသုံးပြုမည်</a>
+            </div>
+
+            <button id="nx-mobile-menu-btn" class="md:hidden p-2 text-slate-700 focus:outline-none" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="nx-mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white px-6 py-6 space-y-4">
+            <a href="#features" class="block nx-nav-link">လုပ်ဆောင်ချက်များ</a>
+            <a href="#templates" class="block nx-nav-link">တမ်းပလိတ်များ</a>
+            <a href="#how-it-works" class="block nx-nav-link">အသုံးပြုပုံ</a>
+            <a href="#pricing" class="block nx-nav-link">ဈေးနှုန်းများ</a>
+            <a href="#faq" class="block nx-nav-link">မေးလေ့ရှိသည်များ</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+                <a href="#login" class="nx-btn-secondary text-center">ဝင်ရောက်ရန်</a>
+                <a href="#signup" class="nx-btn-primary text-center">စတင်အသုံးပြုမည်</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="nx-app">
+        <section class="nx-section nx-hero relative overflow-hidden">
+            <div class="nx-container text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-600 text-xs sm:text-sm font-semibold mb-6 border border-emerald-100">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    <span>Myanmar's All-in-One Digital Operating Platform</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    သင့်လုပ်ငန်းကို Digital ခေတ်သို့ မြှင့်တင်ပါ <br class="hidden sm:inline">
+                    <span class="nx-text-gradient">neXa ဖြင့် အားလုံးကို တစ်နေရာတည်းမှ</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Website၊ အော်ဒါစီမံခန့်ခွဲမှု၊ ဝယ်ယူသူမှတ်တမ်း နှင့် Automation စနစ်များကို မည်သည့် Coding မှ ရေးသားစရာမလိုဘဲ အလွယ်တကူ စတင်လိုက်ပါ။
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                    <a href="#signup" class="nx-btn-primary w-full sm:w-auto text-base px-8 py-3.5">
+                        ၁၄ ရက် အခမဲ့ စမ်းသုံးမည်
+                        <i data-lucide="chevron-right" class="w-5 h-5 ml-1"></i>
+                    </a>
+                    <a href="#templates" class="nx-btn-secondary w-full sm:w-auto text-base px-8 py-3.5">
+                        တမ်းပလိတ်များ ကြည့်ရှုမည်
+                    </a>
+                </div>
+                <div class="flex items-center justify-center gap-6 text-xs sm:text-sm text-slate-500">
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Credit Card မလိုပါ</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> မြန်မာဘာသာဖြင့် အသုံးပြုနိုင်သည်</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 border-y border-slate-100 bg-slate-50/50">
+            <div class="nx-container">
+                <p class="text-center text-xs font-semibold uppercase tracking-wider text-slate-400 mb-8">
+                    မြန်မာနိုင်ငံအနှံ့ လုပ်ငန်းပေါင်း ၁,၀၀၀ ကျော်က ယုံကြည်စွာ အသုံးပြုနေသည်
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
+                    <span class="text-xl font-bold text-slate-700 tracking-wider">MANDALAY FASHION</span>
+                    <span class="text-xl font-bold text-slate-700 tracking-wider">YANGON MART</span>
+                    <span class="text-xl font-bold text-slate-700 tracking-wider">SHWE MART</span>
+                    <span class="text-xl font-bold text-slate-700 tracking-wider">TAUNGGYI CAFE</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="nx-section">
+            <div class="nx-container">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">လုပ်ငန်းတိုးတက်ဖို့ လိုအပ်တဲ့ အရာအားလုံး</h2>
+                    <p class="text-slate-600">မတူညီသော System များကို သီးသန့်သုံးစရာမလိုဘဲ neXa တစ်ခုတည်းဖြင့် စီမံခန့်ခွဲလိုက်ပါ။</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="nx-card p-6">
+                        <div class="nx-icon-box mb-4"><i data-lucide="globe" class="w-6 h-6 text-emerald-600"></i></div>
+                        <h3 class="text-lg font-bold mb-2">No-Code Website Builder</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">မိနစ်ပိုင်းအတွင်း အသင့်သုံး Template များဖြင့် မိမိကိုယ်ပိုင် E-commerce Website ပြုလုပ်ပါ Dashboard မှ စီမံပါ။</p>
+                    </div>
+                    <div class="nx-card p-6">
+                        <div class="nx-icon-box mb-4"><i data-lucide="package" class="w-6 h-6 text-emerald-600"></i></div>
+                        <h3 class="text-lg font-bold mb-2">Order Management</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">အော်ဒါ လက်ခံခြင်း၊ Delivery စာရင်းသွင်းခြင်းနှင့် ငွေပေးချေမှုမှတ်တမ်းများကို စနစ်တကျ စီမံခန့်ခွဲပါ။</p>
+                    </div>
+                    <div class="nx-card p-6">
+                        <div class="nx-icon-box mb-4"><i data-lucide="users" class="w-6 h-6 text-emerald-600"></i></div>
+                        <h3 class="text-lg font-bold mb-2">Customer CRM</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">ဝယ်ယူသူများ၏ ဖုန်းနံပါတ်၊ ဝယ်ယူမှုမှတ်တမ်းနှင့် တုံ့ပြန်ချက်များကို တစ်နေရာတည်းတွင် စနစ်တကျ ထိန်းသိမ်းပါ။</p>
+                    </div>
+                    <div class="nx-card p-6">
+                        <div class="nx-icon-box mb-4"><i data-lucide="sparkles" class="w-6 h-6 text-emerald-600"></i></div>
+                        <h3 class="text-lg font-bold mb-2">AI Business Assistant</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">ပစ္စည်းအကြောင်းအရာ ရေးသားခြင်း၊ စာပြန်ခြင်းနှင့် အစီရင်ခံစာများကို AI စနစ်ဖြင့် လျင်မြန်စွာ လုပ်ဆောင်ပါ။</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="templates" class="nx-section bg-slate-50">
+            <div class="nx-container">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">လုပ်ငန်းအမျိုးအစားအလိုက် အသင့်သုံး တမ်းပလိတ်များ</h2>
+                    <p class="text-slate-600">မိမိလုပ်ငန်းနှင့် ကိုက်ညီသည့် Design ကို ရွေးချယ်ပြီး ချက်ချင်း စတင်လိုက်ပါ။</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="nx-card overflow-hidden group">
+                        <div class="h-48 bg-slate-200 flex items-center justify-center text-slate-400 font-semibold group-hover:scale-105 transition-transform duration-300">
+                            Fashion & Retail Preview
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded">E-commerce</span>
+                            <h3 class="text-xl font-bold mt-2 mb-2">Urban Style Clothing</h3>
+                            <p class="text-slate-600 text-sm mb-4">အထည်နှင့် လူသုံးကုန်ပစ္စည်း ရောင်းချသည့် လုပ်ငန်းများအတွက် သီးသန့် ဒီဇိုင်း။</p>
+                            <a href="#" class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">Preview Template <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="nx-card overflow-hidden group">
+                        <div class="h-48 bg-slate-200 flex items-center justify-center text-slate-400 font-semibold group-hover:scale-105 transition-transform duration-300">
+                            Food & Grocery Preview
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded">Food & Beverage</span>
+                            <h3 class="text-xl font-bold mt-2 mb-2">Fresh Market Online</h3>
+                            <p class="text-slate-600 text-sm mb-4">စားသောက်ကုန်နှင့် စူပါမားကတ် လုပ်ငန်းများအတွက် လွယ်ကူသော မီနူးစနစ်။</p>
+                            <a href="#" class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">Preview Template <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="nx-card overflow-hidden group">
+                        <div class="h-48 bg-slate-200 flex items-center justify-center text-slate-400 font-semibold group-hover:scale-105 transition-transform duration-300">
+                            Electronics & Tech Preview
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded">Digital Store</span>
+                            <h3 class="text-xl font-bold mt-2 mb-2">TechHub Myanmar</h3>
+                            <p class="text-slate-600 text-sm mb-4">အီလက်ထရွန်နစ်နှင့် နည်းပညာပစ္စည်း ရောင်းချသူများအတွက် ခေတ်မီဆန်းသစ်သော ဒီဇိုင်း။</p>
+                            <a href="#" class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">Preview Template <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="nx-section">
+            <div class="nx-container">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">အဆင့် (၃) ဆင့်ဖြင့် စတင်လိုက်ပါ</h2>
+                    <p class="text-slate-600">နည်းပညာကျွမ်းကျင်မှု မလိုဘဲ မည်သူမဆို လွယ်ကူစွာ အသုံးပြုနိုင်ပါသည်။</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">1</div>
+                        <h3 class="text-xl font-bold mb-2">Account အခမဲ့ ဖွင့်ပါ</h3>
+                        <p class="text-slate-600 text-sm">ဖုန်းနံပါတ် သို့မဟုတ် အီးမေးလ်ဖြင့် မိနစ်ပိုင်းအတွင်း အကောင့်စတင်ပြုလုပ်ပါ။</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">2</div>
+                        <h3 class="text-xl font-bold mb-2">Template ရွေးချယ်ပါ</h3>
+                        <p class="text-slate-600 text-sm">မိမိလုပ်ငန်းနှင့် ကိုက်ညီသည့် Template ကိုရွေးချယ်၍ ကုန်ပစ္စည်းများ ထည့်သွင်းပါ။</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">3</div>
+                        <h3 class="text-xl font-bold mb-2">ရောင်းချမှု စတင်ပါ</h3>
+                        <p class="text-slate-600 text-sm">Website Live လွှင့်ပြီး လူမှုကွန်ရက်များတွင် လင့်ခ်မျှဝေကာ အော်ဒါများ စတင်လက်ခံပါ။</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="nx-section bg-slate-50">
+            <div class="nx-container">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">သင့်တော်ဆန်းသစ်သော ဈေးနှုန်းများ</h2>
+                    <p class="text-slate-600">လုပ်ငန်းအရွယ်အစားအလိုက် ကိုက်ညီမည့် Plan ကို ရွေးချယ်ပါ</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="nx-card p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Starter</h3>
+                            <p class="text-slate-600 text-sm mb-6">အွန်လိုင်းရောင်းချမှု စတင်မည့် လုပ်ငန်းငယ်များအတွက်</p>
+                            <div class="text-3xl font-extrabold mb-6">၃၅,၀၀၀ <span class="text-sm font-normal text-slate-500">ကျပ် / လ</span></div>
+                            <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> E-commerce Website (1 ခု)</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Products 100 ထိ ထည့်သွင်းနိုင်ခြင်း</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Order Management System</li>
+                            </ul>
+                        </div>
+                        <a href="#signup" class="nx-btn-secondary w-full text-center">စတင်အသုံးပြုမည်</a>
+                    </div>
+                    <div class="nx-card p-8 flex flex-col justify-between border-2 border-emerald-500 relative shadow-xl">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Growth</h3>
+                            <p class="text-slate-600 text-sm mb-6">တိုးတက်နေသော လုပ်ငန်းများအတွက်</p>
+                            <div class="text-3xl font-extrabold mb-6">၇၅,၀၀၀ <span class="text-sm font-normal text-slate-500">ကျပ် / လ</span></div>
+                            <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Unlimited Products</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Custom Domain ချိတ်ဆက်ခြင်း</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Customer CRM & Analytics</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> AI Assistant Access</li>
+                            </ul>
+                        </div>
+                        <a href="#signup" class="nx-btn-primary w-full text-center">စတင်အသုံးပြုမည်</a>
+                    </div>
+                    <div class="nx-card p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Enterprise</h3>
+                            <p class="text-slate-600 text-sm mb-6">လုပ်ငန်းကြီးများအတွက် သီးသန့်စနစ်</p>
+                            <div class="text-3xl font-extrabold mb-6">Custom</div>
+                            <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Growth Plan ပါ အားလုံးပါဝင်သည်</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Dedicated Account Manager</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Custom Features & Integration</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="nx-btn-secondary w-full text-center">ဆက်သွယ်မေးမြန်းရန်</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="nx-section">
+            <div class="nx-container max-w-3xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">မေးလေ့ရှိသော မေးခွန်းများ</h2>
+                    <p class="text-slate-600">neXa နှင့် ပတ်သက်ပြီး ပိုမိုသိရှိလိုသည်များကို လေ့လာပါ</p>
+                </div>
+                <div class="space-y-4" id="nx-faq-accordion">
+                    <div class="nx-card p-6 cursor-pointer nx-faq-item">
+                        <div class="flex items-center justify-between font-bold text-lg">
+                            <span>Coding တတ်စရာမလိုဘဲ သုံးနိုင်ပါသလား။</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 nx-faq-icon transition-transform"></i>
+                        </div>
+                        <div class="nx-faq-answer hidden mt-4 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+                            ဟုတ်ကဲ့ ရပါတယ်။ neXa ကို နည်းပညာ အတွေ့အကြုံမရှိသူများပါ လွယ်ကူစွာ သုံးနိုင်အောင် Drag-and-Drop စနစ်ဖြင့် ဖန်တီးထားပါသည်။
+                        </div>
+                    </div>
+                    <div class="nx-card p-6 cursor-pointer nx-faq-item">
+                        <div class="flex items-center justify-between font-bold text-lg">
+                            <span>မိမိကိုယ်ပိုင် Custom Domain ချိတ်လို့ရပါသလား။</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 nx-faq-icon transition-transform"></i>
+                        </div>
+                        <div class="nx-faq-answer hidden mt-4 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+                            ရပါသည်၊ Growth Plan နှင့် Enterprise Plan များတွင် မိမိတို့ ပိုင်ဆိုင်သော (.com, .com.mm) Custom Domain များကို တိုက်ရိုက် ချိတ်ဆက်နိုင်ပါသည်။
+                        </div>
+                    </div>
+                    <div class="nx-card p-6 cursor-pointer nx-faq-item">
+                        <div class="flex items-center justify-between font-bold text-lg">
+                            <span>၁၄ ရက် အခမဲ့ စမ်းသုံးရာတွင် Credit Card လိုအပ်ပါသလား။</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 nx-faq-icon transition-transform"></i>
+                        </div>
+                        <div class="nx-faq-answer hidden mt-4 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-4">
+                            လုံးဝ မလိုပါ၊ အကောင့် ချက်ချင်းဖွင့်ပြီး ၁၄ ရက် အခမဲ့ စတင် အသုံးပြုနိုင်ပါသည်။
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nx-section bg-slate-900 text-white relative overflow-hidden">
+            <div class="nx-container text-center max-w-3xl relative z-10">
+                <h2 class="text-3xl sm:text-5xl font-extrabold mb-6 text-white">သင့်လုပ်ငန်းကို ဒီနေ့ဘဲ Digital စနစ်သို့ ပြောင်းလဲလိုက်ပါ</h2>
+                <p class="text-slate-400 text-base sm:text-lg mb-8">neXa ဖြင့် အဆင့်မြှင့်တင်ပြီး ရောင်းအားများကို တိုးတက်စေဖို့ အခုပဲ စတင်လိုက်ပါ။</p>
+                <a href="#signup" class="nx-btn-primary text-base px-8 py-4">
+                    ၁၄ ရက် အခမဲ့ စတင်မည်
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="nx-footer bg-slate-950 text-slate-400 py-16 border-t border-slate-800">
+        <div class="nx-container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div class="space-y-4">
+                    <a href="#" class="nx-brand-logo flex items-center gap-2 text-white">
+                        <span class="nx-logo-box">nX</span>
+                        <span class="nx-logo-text text-white">neXa</span>
+                    </a>
+                    <p class="text-sm leading-relaxed">Myanmar’s Digital Business Operating Platform for Growing Businesses.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">ထုတ်ကုန်များ</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-white transition-colors">Website Builder</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors">Order Management</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors">Customer CRM</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">ကုမ္ပဏီ</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">ကျွန်ုပ်တို့အကြောင်း</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">ဈေးနှုန်းများ</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">ဆက်သွယ်ရန်</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">ဥပဒေရေးရာ</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
+                &copy; 2026 neXa Platform. All rights reserved. Built for Myanmar SMEs.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
