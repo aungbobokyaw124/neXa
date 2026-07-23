@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="my" class="scroll-smooth">
 <head>
@@ -32,8 +31,11 @@
     <header class="nx-header sticky top-0 z-50">
         <div class="nx-container flex items-center justify-between h-20">
             <a href="#" class="nx-brand-logo flex items-center gap-2">
-                <span class="nx-logo-box">nX</span>
-                <span class="nx-logo-text">neXa</span>
+                <img src="assets/brand/nexa-logo.svg" alt="neXa Logo" class="h-8 w-auto" onerror="this.remove(); document.getElementById('nx-logo-fallback').classList.remove('hidden');">
+                <div id="nx-logo-fallback" class="hidden flex items-center gap-2">
+                    <span class="nx-logo-box">nX</span>
+                    <span class="nx-logo-text">neXa</span>
+                </div>
             </a>
 
             <nav class="hidden md:flex items-center gap-8">
@@ -318,8 +320,11 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
                 <div class="space-y-4">
                     <a href="#" class="nx-brand-logo flex items-center gap-2 text-white">
-                        <span class="nx-logo-box">nX</span>
-                        <span class="nx-logo-text text-white">neXa</span>
+                        <img src="assets/brand/nexa-logo.svg" alt="neXa Logo" class="h-8 w-auto" onerror="this.remove(); document.getElementById('nx-footer-logo-fallback').classList.remove('hidden');">
+                        <div id="nx-footer-logo-fallback" class="hidden flex items-center gap-2">
+                            <span class="nx-logo-box">nX</span>
+                            <span class="nx-logo-text text-white">neXa</span>
+                        </div>
                     </a>
                     <p class="text-sm leading-relaxed">Myanmar’s Digital Business Operating Platform for Growing Businesses.</p>
                 </div>
