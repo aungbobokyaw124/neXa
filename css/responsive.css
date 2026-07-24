@@ -1,0 +1,20 @@
+/* css/responsive.css */
+@media (max-width: 768px) {
+  .nx-container {
+    padding: 0 0.75rem;
+  }
+
+  h1 {
+    font-size: var(--nx-font-size-4xl);
+  }
+
+  .nx-glass-header {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: var(--nx-font-size-2xl);
+  }
+}
