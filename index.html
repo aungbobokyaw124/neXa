@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="my" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>neXa - Next Gen Platform</title>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div id="nx-preloader" class="nx-preloader">
+    <h1 style="font-size: var(--nx-font-size-4xl); color: var(--nx-accent-primary);">
+      <span id="nx-preloader-text" class="nx-typing-cursor"></span>
+    </h1>
+    <p id="nx-preloader-status" style="color: var(--nx-text-secondary); margin-top: 1rem; font-size: var(--nx-font-size-sm);"></p>
+  </div>
+
+  <div class="nx-announcement-bar">
+    <div class="nx-container">
+      <div id="nx-announcement-slider">
+        <div class="nx-announcement-item nx-slide-active">🚀 neXa Platform v1.0 ကို စတင် မိတ်ဆက်လိုက်ပြီဖြစ်ပါတယ်။</div>
+        <div class="nx-announcement-item nx-slide-hidden">🎉 အသစ်တင်ဆက်ထားသော Templates များကို လေ့လာကြည့်ရှုလိုက်ပါ။</div>
+      </div>
+    </div>
+  </div>
+
+  <header class="nx-header nx-glass-header">
+    <div class="nx-container" style="display: flex; align-items: center; justify-content: space-between; height: 70px;">
+      <a href="#" style="font-size: var(--nx-font-size-2xl); font-weight: 700; color: var(--nx-accent-primary); text-decoration: none;">neXa</a>
+      
+      <nav style="display: flex; gap: 1.5rem; align-items: center;">
+        <button class="nx-btn nx-btn-outline nx-theme-toggle" aria-label="Toggle Theme">
+          <span class="nx-icon-dark">🌙 Dark</span>
+          <span class="nx-icon-light hidden">☀️ Light</span>
+        </button>
+        <button class="nx-btn nx-btn-primary" data-nx-modal-target="nx-login-modal">Login</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="nx-container" style="padding-top: 4rem; padding-bottom: 4rem; text-align: center;">
+    <h1 class="nx-animate-on-scroll" data-nx-animation="nx-slide-up" style="font-size: var(--nx-font-size-5xl); margin-bottom: 1rem;">
+      Build Faster with <span style="color: var(--nx-accent-primary);">neXa</span> Architecture
+    </h1>
+    <p class="nx-animate-on-scroll" data-nx-animation="nx-fade-in" style="color: var(--nx-text-secondary); max-width: 600px; margin: 0 auto 2rem auto;">
+      Modular CSS & Vanilla JS ဖြင့် တည်ဆောက်ထားသော Production-Ready Web Template ဖြစ်ပါတယ်။
+    </p>
+    <button class="nx-btn nx-btn-primary nx-pulse-glow" onclick="nxToast.success('neXa မှ ကြိုဆိုပါတယ်!')">
+      Demo Toast စမ်းသပ်ရန်
+    </button>
+  </main>
+
+  <div id="nx-login-modal" class="nx-modal" aria-hidden="true" style="position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 100;">
+    <div class="nx-card" style="padding: 2rem; width: 100%; max-width: 400px; position: relative;">
+      <button class="nx-modal-close" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: var(--nx-text-primary); cursor: pointer;">✕</button>
+      <h2>Login to neXa</h2>
+      <p style="color: var(--nx-text-secondary); margin-bottom: 1.5rem;">သင့်အကောင့်သို့ ဝင်ရောက်ပါ</p>
+      <button class="nx-btn nx-btn-primary" style="width: 100%;">Continue</button>
+    </div>
+  </div>
+
+  <div id="nx-toast-container" class="nx-toast-container"></div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/toast.js"></script>
+</body>
+</html>
