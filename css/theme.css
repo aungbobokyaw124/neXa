@@ -1,0 +1,22 @@
+/* css/theme.css */
+[data-theme="light"] {
+  --nx-bg-primary: #ffffff;
+  --nx-bg-secondary: #f1f5f9;
+  --nx-text-primary: #0f172a;
+  --nx-text-secondary: #475569;
+  --nx-border-color: #e2e8f0;
+}
+
+[data-theme="dark"] {
+  --nx-bg-primary: #0f172a;
+  --nx-bg-secondary: #1e293b;
+  --nx-text-primary: #f8fafc;
+  --nx-text-secondary: #94a3b8;
+  --nx-border-color: #334155;
+}
+
+body {
+  background-color: var(--nx-bg-primary);
+  color: var(--nx-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
