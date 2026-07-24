@@ -1,1 +1,27 @@
+/* Mobile First Layout Adjustments */
+
+@media (min-width: 640px) {
+  .nx-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nx-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .nx-hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nx-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
 
