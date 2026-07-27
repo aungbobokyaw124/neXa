@@ -1,39 +1,22 @@
-/* js/animation.js */
-(function () {
-  'use strict';
+/* ==========================================
+   neXa Scroll Animations
+   ========================================== */
 
-  function initScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.nx-animate-on-scroll');
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = $$('.nx-animate-on-scroll');
 
-    if (!('IntersectionObserver' in window)) {
-      animatedElements.forEach((el) => {
-        el.classList.add('nx-fade-in');
-      });
-      return;
-    }
+  const observerOptions = {
+    threshold: 0.15,
+  };
 
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.15
-    };
-
-    const animationObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const target = entry.target;
-          const animationClass = target.getAttribute('data-nx-animation') || 'nx-fade-in';
-          
-          target.classList.add(animationClass);
-          observer.unobserve(target);
-        }
-      });
-    }, observerOptions);
-
-    animatedElements.forEach((el) => {
-      animationObserver.observe(el);
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('nx-animated');
+        observer.unobserve(entry.target); // တစ်ကြိမ် ပေါ်ပြီးပါက Observer မှ ရပ်တန့်မည်
+      }
     });
-  }
+  }, observerOptions);
 
-  document.addEventListener('DOMContentLoaded', initScrollAnimations);
-})();
+  animatedElements.forEach((el) => observer.observe(el));
+});
