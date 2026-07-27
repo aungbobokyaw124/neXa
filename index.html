@@ -14,15 +14,15 @@
 <body>
 
   <div id="nx-preloader" class="nx-preloader">
-    <h1 style="font-size: var(--nx-font-size-4xl); color: var(--nx-accent-primary);">
+    <h1>
       <span id="nx-preloader-text" class="nx-typing-cursor"></span>
     </h1>
-    <p id="nx-preloader-status" style="color: var(--nx-text-secondary); margin-top: 1rem; font-size: var(--nx-font-size-sm);"></p>
+    <p id="nx-preloader-status"></p>
   </div>
 
   <div class="nx-announcement-bar">
     <div class="nx-container">
-      <div id="nx-announcement-slider">
+      <div id="nx-announcement-slider" class="nx-announcement-slider">
         <div class="nx-announcement-item nx-slide-active">🚀 neXa Platform v1.0 ကို စတင် မိတ်ဆက်လိုက်ပြီဖြစ်ပါတယ်။</div>
         <div class="nx-announcement-item nx-slide-hidden">🎉 အသစ်တင်ဆက်ထားသော Templates များကို လေ့လာကြည့်ရှုလိုက်ပါ။</div>
       </div>
@@ -30,10 +30,10 @@
   </div>
 
   <header class="nx-header nx-glass-header">
-    <div class="nx-container" style="display: flex; align-items: center; justify-content: space-between; height: 70px;">
-      <a href="#" style="font-size: var(--nx-font-size-2xl); font-weight: 700; color: var(--nx-accent-primary); text-decoration: none;">neXa</a>
+    <div class="nx-container nx-header-container">
+      <a href="#" class="nx-logo">neXa</a>
       
-      <nav style="display: flex; gap: 1.5rem; align-items: center;">
+      <nav class="nx-nav">
         <button class="nx-btn nx-btn-outline nx-theme-toggle" aria-label="Toggle Theme">
           <span class="nx-icon-dark">🌙 Dark</span>
           <span class="nx-icon-light hidden">☀️ Light</span>
@@ -61,12 +61,12 @@
     </div>
   </main>
 
-  <div id="nx-login-modal" class="nx-modal" aria-hidden="true" style="position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 100;">
-    <div class="nx-card" style="padding: 2rem; width: 100%; max-width: 400px; position: relative;">
-      <button class="nx-modal-close" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: var(--nx-text-primary); cursor: pointer;">✕</button>
+  <div id="nx-login-modal" class="nx-modal" aria-hidden="true">
+    <div class="nx-card nx-modal-card">
+      <button class="nx-modal-close" aria-label="Close modal">✕</button>
       <h2>Login to neXa</h2>
-      <p style="color: var(--nx-text-secondary); margin-bottom: 1.5rem;">သင့်အကောင့်သို့ ဝင်ရောက်ပါ</p>
-      <button class="nx-btn nx-btn-primary" style="width: 100%;">Continue</button>
+      <p class="nx-modal-desc">သင့်အကောင့်သို့ ဝင်ရောက်ပါ</p>
+      <button class="nx-btn nx-btn-primary nx-full-width">Continue</button>
     </div>
   </div>
 
