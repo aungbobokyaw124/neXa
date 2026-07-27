@@ -1,53 +1,25 @@
-/* js/preloader.js */
-(function () {
-  'use strict';
+/* ==========================================
+   neXa Preloader
+   ========================================== */
 
-  const BRAND_TEXT = 'neXa';
-  const TYPING_SPEED = 150;
-  const FADE_DELAY = 400;
+document.addEventListener('DOMContentLoaded', async () => {
+  const preloader = $('#nx-preloader');
+  const textEl = $('#nx-preloader-text');
+  const statusEl = $('#nx-preloader-status');
 
-  function typeBrandName(element, callback) {
-    let index = 0;
-    element.textContent = '';
+  if (!preloader || !textEl) return;
 
-    const timer = setInterval(() => {
-      if (index < BRAND_TEXT.length) {
-        element.textContent += BRAND_TEXT.charAt(index);
-        index++;
-      } else {
-        clearInterval(timer);
-        if (typeof callback === 'function') {
-          callback();
-        }
-      }
-    }, TYPING_SPEED);
+  const brandName = "neXa";
+  
+  // Typing Animation Effect
+  for (let i = 0; i <= brandName.length; i++) {
+    textEl.textContent = brandName.substring(0, i);
+    await sleep(200);
   }
 
-  function hidePreloader() {
-    const preloaderEl = document.getElementById('nx-preloader');
-    if (!preloaderEl) return;
+  if (statusEl) statusEl.textContent = "Ready!";
+  await sleep(400);
 
-    setTimeout(() => {
-      preloaderEl.classList.add('nx-preloader-hidden');
-    }, FADE_DELAY);
-  }
-
-  function initPreloader() {
-    const brandTextEl = document.getElementById('nx-preloader-text');
-    const statusTextEl = document.getElementById('nx-preloader-status');
-
-    if (brandTextEl) {
-      typeBrandName(brandTextEl, () => {
-        if (statusTextEl) {
-          statusTextEl.textContent = 'Loading...';
-        }
-      });
-    }
-
-    window.addEventListener('load', () => {
-      hidePreloader();
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', initPreloader);
-})();
+  // Smooth Fade Out
+  preloader.classList.add('nx-preloader-hidden');
+});
