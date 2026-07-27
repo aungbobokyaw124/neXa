@@ -1,50 +1,39 @@
-/* js/toast.js */
-(function () {
-  'use strict';
+/* ==========================================
+   neXa Toast Notifications
+   ========================================== */
 
-  let toastContainer = null;
-
-  function ensureContainer() {
-    if (!toastContainer) {
-      toastContainer = document.getElementById('nx-toast-container');
-    }
-    if (!toastContainer) {
-      toastContainer = document.createElement('div');
-      toastContainer.id = 'nx-toast-container';
-      toastContainer.className = 'nx-toast-container';
-      document.body.appendChild(toastContainer);
-    }
-  }
-
-  function showToast(message, type = 'info', duration = 3000) {
-    ensureContainer();
+const nxToast = {
+  show(message, type = 'info') {
+    const container = $('#nx-toast-container');
+    if (!container) return;
 
     const toast = document.createElement('div');
-    toast.className = `nx-toast nx-toast-${type} nx-slide-up`;
-    
-    let iconSymbol = 'ℹ️';
-    if (type === 'success') iconSymbol = '✅';
-    if (type === 'error') iconSymbol = '⚠️';
+    toast.className = `nx-toast nx-toast-${type}`;
+    toast.textContent = message;
 
-    toast.innerHTML = `
-      <span class="nx-toast-icon">${iconSymbol}</span>
-      <span class="nx-toast-message">${message}</span>
-    `;
+    // Toast Style
+    Object.assign(toast.style, {
+      backgroundColor: type === 'success' ? '#10b981' : '#3b82f6',
+      color: '#ffffff',
+      padding: '12px 20px',
+      borderRadius: '8px',
+      marginTop: '10px',
+      boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+      transition: 'all 0.3s ease',
+    });
 
-    toastContainer.appendChild(toast);
+    container.appendChild(toast);
 
     setTimeout(() => {
-      toast.classList.add('nx-preloader-hidden');
-      toast.addEventListener('transitionend', () => {
-        toast.remove();
-      });
-    }, duration);
-  }
+      toast.style.opacity = '0';
+      setTimeout(() => toast.remove(), 300);
+    }, 3000);
+  },
 
-  window.nxToast = {
-    show: showToast,
-    success: (msg, duration) => showToast(msg, 'success', duration),
-    error: (msg, duration) => showToast(msg, 'error', duration),
-    info: (msg, duration) => showToast(msg, 'info', duration)
-  };
-})();
+  success(msg) {
+    this.show(msg, 'success');
+  },
+  info(msg) {
+    this.show(msg, 'info');
+  },
+};
