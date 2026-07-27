@@ -1,33 +1,39 @@
-/* js/menu.js */
-(function () {
-  'use strict';
+/* ==========================================
+   neXa Interactive Components (FAQ & Scroll Top)
+   ========================================== */
 
-  function initStickyHeader() {
-    const header = document.querySelector('.nx-header');
-    if (!header) return;
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. FAQ Accordion Logic
+  const faqQuestions = $$('.nx-faq-question');
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 20) {
-        header.classList.add('nx-header-scrolled');
-      } else {
-        header.classList.remove('nx-header-scrolled');
+  faqQuestions.forEach((question) => {
+    question.addEventListener('click', () => {
+      const item = question.parentElement;
+      const isActive = item.classList.contains('active');
+
+      // အခြားဖွင့်ထားသော FAQ များကို ပိတ်ခြင်း (One item open at a time)
+      $$('.nx-faq-item').forEach((el) => el.classList.remove('active'));
+
+      if (!isActive) {
+        item.classList.add('active');
       }
     });
-  }
+  });
 
-  function initMobileMenu() {
-    const menuToggleBtn = document.getElementById('nx-menu-toggle');
-    const mobileDrawer = document.getElementById('nx-mobile-drawer');
+  // 2. Scroll To Top Button Logic
+  const scrollTopBtn = $('#nx-scroll-top');
 
-    if (!menuToggleBtn || !mobileDrawer) return;
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
 
-    menuToggleBtn.addEventListener('click', () => {
-      mobileDrawer.classList.toggle('nx-drawer-open');
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    initStickyHeader();
-    initMobileMenu();
-  });
-})();
+});
