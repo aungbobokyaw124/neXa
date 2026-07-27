@@ -291,3 +291,24 @@ body {
 }
 
 .hidden { display: none !important; }
+/* Slider Navigation Pagination */
+.nx-slider-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.nx-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--nx-border-color, #334155);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nx-dot.active {
+  background-color: var(--nx-accent-primary, #10b981);
+  transform: scale(1.2);
+}
