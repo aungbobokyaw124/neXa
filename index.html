@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>neXa - Next Gen Platform</title>
+  <title>neXa - Next Gen Platform for Myanmar SMEs</title>
 
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/theme.css">
@@ -14,10 +14,11 @@
 <body>
 
   <div id="nx-preloader" class="nx-preloader">
-    <h1>
+    <div class="nx-preloader-logo">neXa</div>
+    <div class="nx-preloader-typing">
       <span id="nx-preloader-text" class="nx-typing-cursor"></span>
-    </h1>
-    <p id="nx-preloader-status"></p>
+    </div>
+    <p id="nx-preloader-status" class="nx-preloader-status">Loading...</p>
   </div>
 
   <div class="nx-announcement-bar">
@@ -43,23 +44,115 @@
     </div>
   </header>
 
-  <main class="nx-hero-section">
-    <div class="nx-container">
-      <div class="nx-hero-content">
-        <h1 class="nx-hero-title nx-animate-on-scroll" data-nx-animation="nx-slide-up">
-          Build Faster with <span class="nx-hero-highlight">neXa</span> Architecture
-        </h1>
-        <p class="nx-hero-subtitle nx-animate-on-scroll" data-nx-animation="nx-fade-in">
-          Modular CSS & Vanilla JS ဖြင့် တည်ဆောက်ထားသော Production-Ready Web Template ဖြစ်ပါတယ်။
-        </p>
-        <div class="nx-hero-actions nx-animate-on-scroll" data-nx-animation="nx-fade-in">
-          <button class="nx-btn nx-btn-primary nx-hero-btn" onclick="nxToast.success('neXa မှ ကြိုဆိုပါတယ်!')">
-            Demo Toast စမ်းသပ်ရန်
-          </button>
+  <main>
+    <section class="nx-hero-section">
+      <div class="nx-container">
+        <div class="nx-hero-content">
+          <h1 class="nx-hero-title nx-animate-on-scroll" data-nx-animation="nx-slide-up">
+            Build Faster with <span class="nx-hero-highlight">neXa</span> Architecture
+          </h1>
+          <p class="nx-hero-subtitle nx-animate-on-scroll" data-nx-animation="nx-fade-in">
+            Modular CSS & Vanilla JS ဖြင့် တည်ဆောက်ထားသော Production-Ready Web Template ဖြစ်ပါတယ်။
+          </p>
+          <div class="nx-hero-actions nx-animate-on-scroll" data-nx-animation="nx-fade-in">
+            <button class="nx-btn nx-btn-primary nx-hero-btn" onclick="nxToast.success('neXa မှ ကြိုဆိုပါတယ်!')">
+              Demo Toast စမ်းသပ်ရန်
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="nx-partner-section nx-animate-on-scroll" data-nx-animation="nx-fade-in">
+      <div class="nx-container">
+        <p class="nx-section-subtitle">TRUSTED BY LEADING BUSINESSES</p>
+        <div class="nx-partner-slider">
+          <div class="nx-partner-track">
+            <div class="nx-partner-item">Company A</div>
+            <div class="nx-partner-item">Company B</div>
+            <div class="nx-partner-item">Company C</div>
+            <div class="nx-partner-item">Company D</div>
+            <div class="nx-partner-item">Company E</div>
+            <div class="nx-partner-item">Company A</div>
+            <div class="nx-partner-item">Company B</div>
+            <div class="nx-partner-item">Company C</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nx-template-section nx-animate-on-scroll" data-nx-animation="nx-slide-up">
+      <div class="nx-container">
+        <h2 class="nx-section-title">Featured Templates</h2>
+        <div class="nx-template-slider" id="nx-template-slider">
+          <div class="nx-template-track">
+            <div class="nx-card nx-template-card">
+              <h3>SaaS Landing Page</h3>
+              <p>Clean, modern layout for software platforms.</p>
+            </div>
+            <div class="nx-card nx-template-card">
+              <h3>E-Commerce Store</h3>
+              <p>Optimized interface for Myanmar online shops.</p>
+            </div>
+            <div class="nx-card nx-template-card">
+              <h3>Corporate Portal</h3>
+              <p>Professional design for enterprises and SMEs.</p>
+            </div>
+          </div>
+          <div class="nx-slider-pagination" id="nx-template-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nx-testimonial-section nx-animate-on-scroll" data-nx-animation="nx-fade-in">
+      <div class="nx-container">
+        <h2 class="nx-section-title">What Our Clients Say</h2>
+        <div class="nx-testimonial-slider" id="nx-testimonial-slider">
+          <div class="nx-testimonial-track">
+            <div class="nx-card nx-testimonial-card">
+              <p>"neXa Architecture ကြောင့် ကျွန်တော်တို့ Web Development လုပ်ငန်းစဉ် ၂ ဆ ပိုမြန်သွားပါတယ်။"</p>
+              <h4>- Daw Aye Aye</h4>
+            </div>
+            <div class="nx-card nx-testimonial-card">
+              <p>"Mobile-first design ဖြစ်တာကြောင့် ဖုန်းနဲ့ကြည့်တဲ့ အသုံးပြုသူတွေအတွက် အလွန် အဆင်ပြေပါတယ်။"</p>
+              <h4>- U Kyaw Swar</h4>
+            </div>
+          </div>
+          <div class="nx-slider-pagination" id="nx-testimonial-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nx-faq-section nx-animate-on-scroll" data-nx-animation="nx-slide-up">
+      <div class="nx-container">
+        <h2 class="nx-section-title">Frequently Asked Questions</h2>
+        <div class="nx-faq-accordion">
+          <div class="nx-faq-item">
+            <button class="nx-faq-question">neXa ဆိုတာ ဘာလဲ။ <span>+</span></button>
+            <div class="nx-faq-answer">
+              <p>neXa သည် မြန်မာ SME များအတွက် အထူးရည်ရွယ်ထုတ်လုပ်ထားသော Premium SaaS Web Template Framework ဖြစ်ပါတယ်။</p>
+            </div>
+          </div>
+          <div class="nx-faq-item">
+            <button class="nx-faq-question">Firebase နဲ့ ချိတ်ဆက်လို့ ရပါသလား။ <span>+</span></button>
+            <div class="nx-faq-answer">
+              <p>ဟုတ်ကဲ့ ရပါတယ်။ Future Firebase Integration ပြုလုပ်နိုင်ရန် Modular Architecture ဖြင့် စနစ်တကျ တည်ဆောက်ထားပါတယ်။</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <button id="nx-scroll-top" class="nx-scroll-top-btn" aria-label="Scroll to Top">⬆️</button>
+
+  <div class="nx-floating-contact">
+    <a href="#" class="nx-contact-btn nx-messenger" title="Messenger">💬</a>
+    <a href="#" class="nx-contact-btn nx-telegram" title="Telegram">✈️</a>
+    <a href="#" class="nx-contact-btn nx-viber" title="Viber">📞</a>
+    <a href="#" class="nx-contact-btn nx-whatsapp" title="WhatsApp">📱</a>
+    <a href="tel:+959123456789" class="nx-contact-btn nx-phone" title="Phone">☎️</a>
+  </div>
 
   <div id="nx-login-modal" class="nx-modal" aria-hidden="true">
     <div class="nx-card nx-modal-card">
