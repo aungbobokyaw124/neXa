@@ -1,12 +1,22 @@
 /* ==========================================
-   neXa Main Style Sheet (Production Ready)
+   neXa Main Style Sheet (SaaS UI/UX Enhanced)
    ========================================== */
 
-/* 1. Global Reset & Base Setup */
+/* 1. Global Reset & Modern Variables */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --nx-bg-primary: #090d16;
+  --nx-bg-secondary: #111827;
+  --nx-accent-primary: #10b981;
+  --nx-accent-glow: rgba(16, 185, 129, 0.25);
+  --nx-border-color: #1f293d;
+  --nx-text-primary: #f9fafb;
+  --nx-text-secondary: #9ca3af;
 }
 
 html, body {
@@ -18,100 +28,24 @@ html, body {
 body {
   font-family: system-ui, -apple-system, "Padauk", "Pyidaungsu", "Noto Sans Myanmar", sans-serif;
   line-height: 1.6;
-  background-color: var(--nx-bg-primary, #0f172a);
-  color: var(--nx-text-primary, #f8fafc);
+  background-color: var(--nx-bg-primary);
+  color: var(--nx-text-primary);
+  letter-spacing: -0.01em;
 }
 
 .nx-container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-.nx-section-title {
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  text-align: center;
-  margin-bottom: 2rem;
-  color: var(--nx-text-primary, #f8fafc);
-}
-
-.nx-section-subtitle {
-  font-size: 0.875rem;
-  letter-spacing: 0.1em;
-  text-align: center;
-  color: var(--nx-text-secondary, #94a3b8);
-  margin-bottom: 1.5rem;
-}
-
-/* 2. Preloader with Typing Animation */
-.nx-preloader {
-  position: fixed;
-  inset: 0;
-  background-color: var(--nx-bg-primary, #0f172a);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-}
-
-.nx-preloader-logo {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--nx-accent-primary, #10b981);
-}
-
-.nx-preloader-typing {
-  font-size: 1.5rem;
-  font-weight: 600;
-  height: 2rem;
-  margin-top: 0.5rem;
-}
-
-.nx-preloader-status {
-  font-size: 0.875rem;
-  color: var(--nx-text-secondary, #94a3b8);
-  margin-top: 1rem;
-}
-
-.nx-preloader-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-/* 3. Announcement Bar */
-.nx-announcement-bar {
-  background-color: var(--nx-bg-secondary, #1e293b);
-  height: 40px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--nx-border-color, #334155);
-}
-
-.nx-announcement-slider {
-  width: 100%;
-  overflow: hidden;
-}
-
-.nx-announcement-item {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
-  font-size: 0.875rem;
-}
-
-.nx-slide-active { display: block; }
-.nx-slide-hidden { display: none; }
-
-/* 4. Header & Navigation */
+/* 2. Header & Branding */
 .nx-header {
   position: sticky;
   top: 0;
-  background-color: var(--nx-bg-primary, #0f172a);
-  border-bottom: 1px solid var(--nx-border-color, #1e293b);
+  background-color: rgba(9, 13, 22, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--nx-border-color);
   z-index: 100;
 }
 
@@ -119,196 +53,296 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 64px;
 }
 
 .nx-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--nx-accent-primary, #10b981);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--nx-text-primary);
   text-decoration: none;
+  letter-spacing: -0.03em;
+}
+
+.nx-logo-dot {
+  color: var(--nx-accent-primary);
 }
 
 .nx-nav {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
-/* 5. Buttons */
+/* 3. Button Design System */
 .nx-btn {
-  height: 44px;
-  border-radius: 12px;
-  padding: 0 20px;
-  border: none;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 18px;
+  border: 1px solid transparent;
   cursor: pointer;
   font-weight: 600;
+  font-size: 0.875rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.nx-btn:hover { transform: translateY(-1px); opacity: 0.95; }
-.nx-btn-primary { background-color: var(--nx-accent-primary, #10b981); color: #fff; }
-.nx-btn-outline { background: transparent; border: 1px solid var(--nx-border-color, #334155); color: var(--nx-text-primary, #f8fafc); }
-.nx-full-width { width: 100%; }
+.nx-btn-primary {
+  background-color: var(--nx-accent-primary);
+  color: #000000;
+  box-shadow: 0 0 20px var(--nx-accent-glow);
+}
 
-/* 6. Hero Section */
+.nx-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+}
+
+.nx-btn-outline {
+  background: var(--nx-bg-secondary);
+  border-color: var(--nx-border-color);
+  color: var(--nx-text-primary);
+}
+
+.nx-btn-outline:hover {
+  background: #1f293d;
+  border-color: #374151;
+}
+
+/* 4. Hero Section & Typography */
 .nx-hero-section {
-  margin-top: 48px;
-  padding-bottom: 48px;
+  padding: 64px 0 48px;
   text-align: center;
 }
 
-.nx-hero-content { max-width: 720px; margin: 0 auto; }
-.nx-hero-title { font-size: clamp(2rem, 4.5vw, 3.25rem); font-weight: 800; line-height: 1.25; margin-bottom: 20px; }
-.nx-hero-highlight { color: var(--nx-accent-primary, #10b981); }
-.nx-hero-subtitle { font-size: clamp(1rem, 1.8vw, 1.125rem); color: var(--nx-text-secondary, #94a3b8); line-height: 1.8; margin-bottom: 32px; }
-
-/* 7. Partner Logo Slider (Infinite Loop) */
-.nx-partner-section { padding: 3rem 0; }
-.nx-partner-slider { overflow: hidden; white-space: nowrap; position: relative; }
-.nx-partner-track { display: inline-flex; gap: 3rem; animation: nx-scroll 20s linear infinite; }
-.nx-partner-slider:hover .nx-partner-track { animation-play-state: paused; }
-.nx-partner-item { font-size: 1.25rem; font-weight: 700; color: var(--nx-text-secondary, #94a3b8); opacity: 0.7; }
-
-@keyframes nx-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.nx-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* 8. Card Layouts (Templates & Testimonials) */
-.nx-template-section, .nx-testimonial-section { padding: 4rem 0; }
-
-.nx-template-track, .nx-testimonial-track {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-.nx-card {
-  background-color: var(--nx-bg-secondary, #1e293b);
-  border: 1px solid var(--nx-border-color, #334155);
-  border-radius: 12px;
-  padding: 1.5rem;
-}
-
-/* 9. FAQ Accordion */
-.nx-faq-section { padding: 4rem 0; }
-.nx-faq-accordion { max-width: 768px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
-.nx-faq-item { border: 1px solid var(--nx-border-color, #334155); border-radius: 12px; overflow: hidden; background-color: var(--nx-bg-secondary, #1e293b); }
-
-.nx-faq-question {
-  width: 100%;
-  padding: 1.25rem;
-  background: none;
-  border: none;
-  color: var(--nx-text-primary, #f8fafc);
-  font-size: 1rem;
+.nx-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: var(--nx-accent-primary);
+  font-size: 0.8rem;
   font-weight: 600;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-.nx-faq-answer {
-  max-height: 0;
+.nx-hero-title {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+
+.nx-hero-highlight {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nx-hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: var(--nx-text-secondary);
+  line-height: 1.8;
+  max-width: 640px;
+  margin: 0 auto 32px;
+}
+
+.nx-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+/* 5. Realistic Dashboard Mockup (CSS/UI) */
+.nx-dashboard-mockup {
+  border-radius: 12px;
+  border: 1px solid var(--nx-border-color);
+  background: var(--nx-bg-secondary);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px var(--nx-accent-glow);
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  padding: 0 1.25rem;
-  color: var(--nx-text-secondary, #94a3b8);
+  text-align: left;
 }
 
-.nx-faq-item.active .nx-faq-answer {
-  max-height: 200px;
-  padding: 0 1.25rem 1.25rem 1.25rem;
-}
-
-/* 10. Scroll To Top & Floating Contact Buttons */
-.nx-scroll-top-btn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: var(--nx-accent-primary, #10b981);
-  color: #fff;
-  border: none;
-  cursor: pointer;
+.nx-mockup-header {
+  height: 36px;
+  background: #0d1322;
+  border-bottom: 1px solid var(--nx-border-color);
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  z-index: 90;
+  padding: 0 16px;
+  gap: 12px;
 }
 
-.nx-scroll-top-btn.visible { opacity: 1; visibility: visible; }
-
-.nx-floating-contact {
-  position: fixed;
-  bottom: 80px;
-  right: 24px;
+.nx-mockup-dots {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 90;
+  gap: 6px;
 }
 
-.nx-contact-btn {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--nx-bg-secondary, #1e293b);
-  border: 1px solid var(--nx-border-color, #334155);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: transform 0.2s ease;
-}
-
-.nx-contact-btn:hover { transform: scale(1.1); }
-
-/* 11. Modal & Utilities */
-.nx-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  padding: 24px;
-}
-
-.hidden { display: none !important; }
-/* Slider Navigation Pagination */
-.nx-slider-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 1.5rem;
-}
-
-.nx-dot {
+.nx-mockup-dots span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--nx-border-color, #334155);
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.nx-dot.active {
-  background-color: var(--nx-accent-primary, #10b981);
-  transform: scale(1.2);
+.nx-dot-red { background: #ef4444; }
+.nx-dot-yellow { background: #f59e0b; }
+.nx-dot-green { background: #10b981; }
+
+.nx-mockup-title {
+  font-size: 0.75rem;
+  color: var(--nx-text-secondary);
+}
+
+.nx-mockup-body {
+  display: flex;
+  min-height: 240px;
+}
+
+.nx-mockup-sidebar {
+  width: 160px;
+  border-right: 1px solid var(--nx-border-color);
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nx-mockup-nav-item {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: var(--nx-text-secondary);
+}
+
+.nx-mockup-nav-item.active {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--nx-accent-primary);
+  font-weight: 600;
+}
+
+.nx-mockup-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.nx-mockup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.nx-mockup-card {
+  background: #0d1322;
+  border: 1px solid var(--nx-border-color);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.nx-card-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--nx-text-secondary);
+}
+
+.nx-card-val {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--nx-text-primary);
+}
+
+.nx-card-growth {
+  font-size: 0.75rem;
+  color: var(--nx-accent-primary);
+  margin-left: 8px;
+}
+
+.nx-mockup-chart-placeholder {
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding-top: 10px;
+}
+
+.nx-chart-bar {
+  flex: 1;
+  background: var(--nx-accent-primary);
+  border-radius: 4px 4px 0 0;
+  opacity: 0.85;
+}
+
+/* 6. Partner Logos (Grayscale to Color) */
+.nx-partner-section {
+  padding: 40px 0;
+  border-top: 1px solid var(--nx-border-color);
+  border-bottom: 1px solid var(--nx-border-color);
+}
+
+.nx-partner-track {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.nx-partner-item {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4b5563;
+  transition: color 0.3s ease;
+}
+
+.nx-partner-item:hover {
+  color: var(--nx-text-primary);
+}
+
+/* 7. Section Titles & Cards */
+.nx-section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.nx-badge-sm {
+  font-size: 0.7rem;
+  color: var(--nx-accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.nx-card {
+  background: var(--nx-bg-secondary);
+  border: 1px solid var(--nx-border-color);
+  border-radius: 12px;
+  padding: 24px;
+  transition: border-color 0.2s ease;
+}
+
+.nx-card:hover {
+  border-color: #374151;
+}
+
+.nx-client-role {
+  font-size: 0.8rem;
+  color: var(--nx-text-secondary);
+}
+
+/* 8. Responsive Adjustments */
+@media (max-width: 640px) {
+  .nx-mockup-sidebar { display: none; }
+  .nx-hero-actions { flex-direction: column; }
+  .nx-btn { width: 100%; }
 }
