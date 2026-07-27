@@ -346,3 +346,9 @@ body {
   .nx-hero-actions { flex-direction: column; }
   .nx-btn { width: 100%; }
 }
+/* Display Utility Classes */
+.hidden,
+.nx-slide-hidden,
+.nx-preloader-hidden {
+  display: none !important;
+}
