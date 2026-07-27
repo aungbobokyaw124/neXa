@@ -352,3 +352,87 @@ body {
 .nx-preloader-hidden {
   display: none !important;
 }
+/* ==========================================
+   Mobile & Native Override Fixes
+   ========================================== */
+
+/* 1. FAQ Buttons Reset */
+.nx-faq-question {
+  width: 100% !important;
+  background: var(--nx-bg-secondary) !important;
+  color: var(--nx-text-primary) !important;
+  border: 1px solid var(--nx-border-color) !important;
+  border-radius: 8px !important;
+  padding: 14px 16px !important;
+  text-align: left !important;
+  font-size: 0.95rem !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+/* 2. Scroll To Top Button */
+.nx-scroll-top-btn {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  left: auto !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: var(--nx-accent-primary) !important;
+  color: #000000 !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  z-index: 99 !important;
+}
+
+.nx-scroll-top-btn.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 3. Floating Contact Buttons */
+.nx-floating-contact {
+  position: fixed !important;
+  bottom: 80px !important;
+  right: 24px !important;
+  left: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  z-index: 98 !important;
+}
+
+.nx-contact-btn {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: var(--nx-bg-secondary) !important;
+  border: 1px solid var(--nx-border-color) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  font-size: 1rem !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}
+
+/* 4. Modal Hide by Default */
+.nx-modal {
+  display: none !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: blur(4px) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 1000 !important;
+}
