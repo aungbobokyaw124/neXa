@@ -1,51 +1,36 @@
-/* js/theme.js */
-(function () {
-  'use strict';
+/* ==========================================
+   neXa Theme Toggle
+   ========================================== */
 
-  const THEME_KEY = 'nexa_theme_preference';
-  const DEFAULT_THEME = 'dark';
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggleBtn = $('.nx-theme-toggle');
+  const darkIcon = $('.nx-icon-dark');
+  const lightIcon = $('.nx-icon-light');
 
-  function getSavedTheme() {
-    return localStorage.getItem(THEME_KEY) || DEFAULT_THEME;
-  }
+  // localStorage မှ Theme ယူခြင်း (Default: dark)
+  const savedTheme = localStorage.getItem('nx-theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  updateIcons(savedTheme);
 
-  function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem(THEME_KEY, theme);
-    updateThemeToggleIcons(theme);
-  }
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-  function updateThemeToggleIcons(theme) {
-    const toggleBtns = document.querySelectorAll('.nx-theme-toggle');
-    toggleBtns.forEach((btn) => {
-      const darkIcon = btn.querySelector('.nx-icon-dark');
-      const lightIcon = btn.querySelector('.nx-icon-light');
-
-      if (darkIcon && lightIcon) {
-        if (theme === 'dark') {
-          darkIcon.classList.add('hidden');
-          lightIcon.classList.remove('hidden');
-        } else {
-          darkIcon.classList.remove('hidden');
-          lightIcon.classList.add('hidden');
-        }
-      }
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('nx-theme', newTheme);
+      updateIcons(newTheme);
     });
   }
 
-  window.nxToggleTheme = function () {
-    const currentTheme = getSavedTheme();
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    applyTheme(newTheme);
-  };
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const initialTheme = getSavedTheme();
-    applyTheme(initialTheme);
-
-    const toggleBtns = document.querySelectorAll('.nx-theme-toggle');
-    toggleBtns.forEach((btn) => {
-      btn.addEventListener('click', window.nxToggleTheme);
-    });
-  });
-})();
+  function updateIcons(theme) {
+    if (!darkIcon || !lightIcon) return;
+    if (theme === 'light') {
+      darkIcon.classList.add('hidden');
+      lightIcon.classList.remove('hidden');
+    } else {
+      darkIcon.classList.remove('hidden');
+      lightIcon.classList.add('hidden');
+    }
+  }
+});
