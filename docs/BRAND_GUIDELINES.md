@@ -1,411 +1,992 @@
-# neXa BRAND GUIDELINES
+neXa BRAND GUIDELINES
 
-**Version:** 1.0  
-**Status:** Official  
-**Brand:** neXa  
-**Tagline:** Build Faster. Create Smarter.
-
----
-
-## 1. BRAND NAME
-
-The official brand name is:
-
-**neXa**
-
-The exact capitalization must be preserved.
-
-### Correct
-
-`neXa`
-
-### Incorrect
-
-`nexa`  
-`Nexa`  
-`NEXA`  
-`NEXORA`
-
-Do not alter the brand name unless the owner explicitly approves a change.
+Version: 1.0
+Status: OFFICIAL / LOCKED
+Brand: neXa
+Tagline: Build Faster. Create Smarter.
 
 ---
 
-## 2. OFFICIAL TAGLINE
+1. PURPOSE
 
-### Primary
+This document is the official brand identity reference for neXa.
 
-**Build Faster. Create Smarter.**
+It defines the permanent visual, verbal, and structural identity of the brand.
 
-The tagline represents the practical purpose of neXa:
-
-- Build digital products faster.
-- Use technology more effectively.
-- Create smarter solutions.
-- Reduce unnecessary complexity.
-
-The tagline should be used consistently across official brand materials.
+All websites, applications, social media accounts, digital products, services, documents, advertisements, videos, presentations, and future platforms must follow these guidelines.
 
 ---
 
-## 3. BRAND POSITIONING
+2. BRAND NAME
 
-neXa is a modern digital technology brand.
+Official Name
 
-It combines:
+neXa
 
-- Technology
-- Artificial Intelligence
+The exact capitalization is:
+
+n e X a
+
+The capital letters are:
+
+X
+
+Do not change the official brand spelling.
+
+---
+
+3. BRAND NAME RULE
+
+Always write:
+
+neXa
+
+Do not use:
+
+Nexa
+NEXA
+NEXA Project
+NeXa
+nexa
+Nexa Project
+
+unless referring to a historical or technical filename that cannot be changed.
+
+Public-facing branding must use:
+
+neXa
+
+---
+
+4. OFFICIAL TAGLINE
+
+The permanent official tagline is:
+
+Build Faster. Create Smarter.
+
+This tagline must not be changed without explicit owner approval.
+
+---
+
+5. TAGLINE RULE
+
+Always preserve the exact wording:
+
+Build Faster. Create Smarter.
+
+Do not replace it with:
+
+Build Better.
+Create More.
+Next Generation Technology.
+Smart Technology.
+Future Starts Here.
+
+Those may be campaign phrases, but they are not the official tagline.
+
+---
+
+6. BRAND POSITIONING
+
+neXa is a modern technology and digital solutions brand focused on practical technology.
+
+Core areas include:
+
 - Web Development
-- Automation
-- Cloud
+- AI Solutions
+- AI Automation
+- Cloud Solutions
 - Digital Services
-- Education
 - Digital Products
-
-The brand should feel capable without appearing arrogant.
-
----
-
-## 4. BRAND PERSONALITY
-
-neXa should communicate:
-
-### Intelligent
-
-Technology should be explained clearly and logically.
-
-### Practical
-
-Focus on solutions that can actually be used.
-
-### Modern
-
-Use contemporary technology and design principles.
-
-### Professional
-
-Communication should be clear and trustworthy.
-
-### Human
-
-Technology should remain understandable and approachable.
-
-### Innovative
-
-Explore new technology when it provides real value.
+- Technology Education
+- Digital Tools
+- Practical Technology Solutions
 
 ---
 
-## 5. BRAND VOICE
+7. BRAND PROMISE
+
+neXa aims to make technology:
+
+- easier to understand
+- easier to use
+- easier to build with
+- more accessible
+- more practical
+- more useful
+
+---
+
+8. BRAND PERSONALITY
+
+neXa should feel:
+
+- modern
+- intelligent
+- practical
+- confident
+- clean
+- professional
+- innovative
+- approachable
+- useful
+- forward-looking
+
+---
+
+9. BRAND VOICE
 
 The neXa voice is:
 
-- Clear
-- Direct
-- Confident
-- Helpful
-- Practical
-- Professional
-- Human
+Clear
 
-Avoid:
+Say what is necessary.
 
-- exaggerated marketing language
-- fake urgency
-- fake authority
-- unnecessary technical jargon
-- misleading promises
-- excessive emojis
+Direct
+
+Avoid unnecessary wording.
+
+Practical
+
+Focus on real solutions.
+
+Honest
+
+Never exaggerate capabilities.
+
+Professional
+
+Maintain trust and credibility.
+
+Helpful
+
+Teach and guide users.
 
 ---
 
-## 6. COMMUNICATION STYLE
+10. WRITING STYLE
 
-Prefer:
+Preferred:
 
-> Clear solution → practical benefit → next action
+Clear
+Short
+Useful
+Direct
+Confident
+Professional
 
 Avoid:
 
-> Long introduction → unnecessary hype → vague promise
+Overly dramatic
+Fake urgency
+Excessive marketing
+Unnecessary technical jargon
+Empty promises
+
+---
+
+11. BRAND COLORS
+
+The official core colors are:
+
+Primary
+
+#0B1F3A
+
+Deep Navy Blue
+
+Accent
+
+#10B981
+
+Emerald Green
+
+Primary Text
+
+#FFFFFF
+
+White
+
+---
+
+12. COLOR SYSTEM
+
+Official base system:
+
+:root {
+  --nexa-primary: #0B1F3A;
+  --nexa-accent: #10B981;
+  --nexa-white: #FFFFFF;
+}
+
+Additional neutral shades may be introduced when necessary for UI functionality.
+
+They must support the official identity.
+
+---
+
+13. COLOR USAGE
+
+Recommended hierarchy:
+
+Deep Navy
+↓
+Main background
+
+Emerald
+↓
+Accent / action / highlights
+
+White
+↓
+Primary text
+
+Do not allow secondary colors to overpower the official palette.
+
+---
+
+14. GRADIENT POLICY
+
+Gradients are not part of the default neXa identity.
+
+Default:
+
+NO GRADIENT
+
+Do not use gradients in:
+
+- logos
+- standard UI
+- official templates
+- standard social graphics
+
+unless explicitly approved for a specific campaign.
+
+---
+
+15. LOGO
+
+The neXa logo is a core brand asset.
+
+The logo must remain visually consistent.
+
+Do not:
+
+- distort
+- stretch
+- rotate
+- compress
+- recolor randomly
+- add unnecessary effects
+- change proportions
+- alter the letter structure
+
+---
+
+16. LOGO COLOR
+
+Preferred logo presentation:
+
+Primary
+
+White logo on Deep Navy background.
+
+Accent
+
+Emerald may be used for approved highlights or logo variations.
+
+Logo color changes must remain within the brand system.
+
+---
+
+17. LOGO CLEAR SPACE
+
+Always maintain sufficient space around the logo.
+
+Do not place text, icons, borders, or other visual elements too close to it.
+
+The logo must remain visually independent.
+
+---
+
+18. LOGO BACKGROUND
+
+Preferred backgrounds:
+
+#0B1F3A
+#FFFFFF
+
+Use other backgrounds only when readability and brand consistency are maintained.
+
+---
+
+19. LOGO MISUSE
+
+Never:
+
+- stretch the logo
+- squash the logo
+- rotate the logo
+- apply random gradients
+- add excessive shadows
+- add decorative frames
+- modify letter shapes
+- use low-resolution versions when a better version exists
+
+---
+
+20. TYPOGRAPHY
+
+Typography should feel:
+
+- modern
+- clean
+- readable
+- technical
+- professional
+
+Use a consistent font family across each product.
+
+Do not randomly mix multiple unrelated fonts.
+
+---
+
+21. HEADING STYLE
+
+Headings should be:
+
+- clear
+- strong
+- readable
+- appropriately sized
+
+Avoid unnecessarily huge headings that dominate small screens.
+
+---
+
+22. BODY TEXT
+
+Body text should prioritize readability.
+
+Use:
+
+- adequate line height
+- reasonable width
+- sufficient contrast
+- appropriate font size
+
+---
+
+23. ICON STYLE
+
+Icons should use a consistent visual language.
+
+Preferred:
+
+- minimal
+- modern
+- clean
+- simple
+
+Do not mix unrelated icon styles within one interface.
+
+---
+
+24. IMAGE STYLE
+
+Official neXa visuals should generally communicate:
+
+- technology
+- innovation
+- digital creation
+- modern interfaces
+- practical solutions
+- clean environments
+
+Avoid generic stock imagery when a more relevant visual can be created.
+
+---
+
+25. SOCIAL VISUAL STYLE
+
+Social graphics should generally use:
+
+Deep Navy
++
+Emerald
++
+White
+
+Visual hierarchy should be strong.
+
+Text should remain readable on mobile.
+
+---
+
+26. VIDEO STYLE
+
+neXa videos should feel:
+
+- modern
+- clean
+- technological
+- fast
+- informative
+- premium
+
+Avoid excessive visual effects.
+
+---
+
+27. UI STYLE
+
+Official UI direction:
+
+Dark First
+Mobile First
+Minimal
+Responsive
+Accessible
+Modern
+Premium
+Practical
+
+Refer to:
+
+"WEB_UI_RULES.md"
+
+for detailed UI rules.
+
+---
+
+28. CARD STYLE
+
+Cards may use subtle surfaces.
+
+Recommended:
+
+background: rgba(255,255,255,.04);
+border: 1px solid rgba(255,255,255,.10);
+
+Cards should remain visually lightweight.
+
+---
+
+29. BORDER STYLE
+
+Use subtle borders.
+
+Recommended:
+
+border: 1px solid rgba(255,255,255,.10);
+
+Do not overuse thick borders.
+
+---
+
+30. RADIUS
+
+Use a consistent radius system.
+
+Recommended:
+
+6px
+10px
+14px
+18px
+24px
+
+Do not use random radius values throughout one interface.
+
+---
+
+31. SHADOW
+
+Shadows should be subtle.
+
+Use them to establish hierarchy rather than decoration.
+
+---
+
+32. ANIMATION
+
+Animation should communicate:
+
+- interaction
+- state
+- transition
+- progress
+
+Avoid animation simply because it looks impressive.
+
+---
+
+33. BRAND MOTION
+
+Preferred motion:
+
+- subtle
+- smooth
+- fast
+- purposeful
+
+Avoid:
+
+- excessive bouncing
+- constant movement
+- distracting effects
+- long animations
+
+---
+
+34. BRAND ICONOGRAPHY
+
+Icons may be used to communicate:
+
+- services
+- features
+- tools
+- navigation
+- actions
+
+Icons must support meaning rather than decoration.
+
+---
+
+35. BRAND LANGUAGE
+
+neXa may communicate in:
+
+- Myanmar
+- English
+- Myanmar + English
+
+Language should be adapted to the audience.
+
+---
+
+36. TECHNICAL TERMS
+
+Technical terms may remain in English when translation would reduce clarity.
+
+Examples:
+
+API
+Frontend
+Backend
+Cloud
+Database
+Deployment
+Repository
+AI
+Automation
+
+---
+
+37. BRAND CLAIMS
+
+Never make unsupported claims.
+
+Avoid statements such as:
+
+#1 AI Platform
+World's Best
+Guaranteed Results
+100% Secure
+Unlimited Everything
+
+unless independently verified and appropriate.
+
+---
+
+38. TRUST RULE
+
+Trust is more important than short-term marketing.
+
+neXa must prefer:
+
+Truth
+over
+Exaggeration
+
+---
+
+39. CUSTOMER COMMUNICATION
+
+Use a helpful and professional tone.
+
+Preferred:
+
+We can help you build it.
+Here is the solution.
+Try this step.
+Here is what is happening.
+
+Avoid:
+
+You must buy now!
+This is the only solution!
+Guaranteed!
+
+---
+
+40. BRAND CONSISTENCY
+
+The following must remain consistent across platforms:
+
+Brand Name
+Tagline
+Core Colors
+Logo
+Voice
+Mission
+Visual Direction
+
+---
+
+41. PLATFORM FLEXIBILITY
+
+Platform-specific layouts may change.
+
+For example:
+
+TikTok:
+
+Fast
+Vertical
+Visual
+Short
+
+Facebook:
+
+Informative
+Community
+Mixed Media
+
+Telegram:
+
+Direct
+Informational
+Resource-focused
+
+Viber:
+
+Communication
+Support
+Community
+
+The brand identity remains the same.
+
+---
+
+42. BRAND HIERARCHY
+
+When designing a neXa product:
+
+Brand
+↓
+Product
+↓
+Feature
+↓
+Content
+
+The product may have its own identity, but it should remain recognizable as part of the neXa ecosystem when appropriate.
+
+---
+
+43. PRODUCT BRANDING
+
+A neXa product may have:
+
+- product name
+- product logo
+- product color variation
+- product-specific UI
+
+However, the relationship with neXa should remain clear.
+
+---
+
+44. SUB-BRANDS
+
+New sub-brands should not be created casually.
+
+Before creating a sub-brand:
+
+1. Define purpose.
+2. Define audience.
+3. Define relationship with neXa.
+4. Define visual identity.
+5. Define ownership.
+6. Document it.
+
+---
+
+45. DOMAIN AND URL BRANDING
+
+Official neXa domains and URLs should be:
+
+- readable
+- trustworthy
+- consistent
+- secure
+
+Use HTTPS.
+
+Avoid confusing or suspicious-looking URLs.
+
+---
+
+46. SOCIAL PROFILE BRANDING
+
+Official accounts should use consistent:
+
+- profile name
+- logo
+- bio
+- tagline where appropriate
+- website
+- contact information
+
+---
+
+47. PROFILE NAME
+
+Primary public brand name:
+
+neXa
+
+If a platform requires additional text, use a clear descriptor.
 
 Example:
 
-### Preferred
+neXa | Technology & Digital Solutions
 
-"Build a responsive website that works smoothly on phones and desktop."
-
-### Avoid
-
-"Experience the revolutionary future of next-generation digital transformation!"
+Do not alter the core brand spelling.
 
 ---
 
-## 7. OFFICIAL COLORS
+48. PROFILE BIO DIRECTION
 
-### Primary
+A profile bio should answer:
 
-**Deep Navy**
+What is neXa?
+What does neXa do?
+Why should someone follow/contact neXa?
 
-`#0B1F3A`
-
-Usage:
-
-- backgrounds
-- navigation
-- headers
-- primary surfaces
-- brand environment
+Keep it short and useful.
 
 ---
 
-### Accent
+49. CONTENT BRANDING
 
-**Emerald Green**
+Content should reinforce the neXa identity through:
 
-`#10B981`
-
-Usage:
-
-- buttons
-- active states
-- links
-- highlights
-- icons
-- important UI elements
-
-Use the accent strategically.
-
-Do not fill every element with emerald green.
+- visual style
+- voice
+- topic selection
+- useful information
+- consistent naming
 
 ---
 
-### Primary Text
+50. ADVERTISING
 
-**White**
+Ads should follow the same identity.
 
-`#FFFFFF`
-
-Usage:
-
-- headings
-- primary text
-- important labels
-- navigation
+Do not create an advertisement that looks unrelated to neXa simply to gain attention.
 
 ---
 
-## 8. COLOR BALANCE
+51. CAMPAIGN FLEXIBILITY
 
-Recommended visual hierarchy:
+Campaigns may temporarily use:
 
-```text
-Deep Navy
-████████████████████
+- additional colors
+- seasonal visuals
+- special layouts
+- promotional phrases
 
-White
-████████
+but the permanent brand identity remains unchanged.
 
-Emerald
-████
+---
 
-The primary background should dominate.
-Emerald should act as an accent.
-White should provide readability.
-9. GRADIENT POLICY
-Gradients are not part of the standard neXa brand identity.
-Do not use:
-background gradients
-logo gradients
-text gradients
-button gradients
-unless specifically approved.
-10. LOGO RULES
-The neXa logo must:
-remain readable
-maintain correct proportions
-use approved colors
-have sufficient surrounding space
-remain recognizable at small sizes
-Do not:
-stretch the logo
-rotate the logo
-distort the logo
-add unnecessary effects
-change the spelling
-redesign the logo without approval
-11. LOGO BACKGROUND
-Preferred backgrounds:
+52. OFFICIAL TAGLINE LOCK
+
+The following is permanently locked unless explicitly changed by the owner:
+
+Build Faster. Create Smarter.
+
+---
+
+53. OFFICIAL COLOR LOCK
+
+The following core colors are permanently locked:
+
 #0B1F3A
-White
-clean neutral surfaces
-Avoid placing the logo over:
-busy images
-low-contrast backgrounds
-complicated patterns
-visually noisy areas
-12. TYPOGRAPHY
-Typography must prioritize readability.
-Recommended characteristics:
-modern
-clean
-geometric where appropriate
-highly readable
-responsive
-Avoid using many font families.
-Recommended maximum:
-one primary UI font
-one optional display font
-13. TYPOGRAPHIC HIERARCHY
-Use clear hierarchy:
-H1
-↓
-H2
-↓
-H3
-↓
-Body
-↓
-Caption
-Do not make every heading extremely large.
-Mobile typography must scale appropriately.
-14. ICONOGRAPHY
-Icons should be:
-simple
-consistent
-modern
-recognizable
-Use one consistent icon style within a UI.
-Do not mix unrelated icon styles.
-15. IMAGERY
-neXa imagery should communicate:
-technology
-creation
-digital products
+#10B981
+#FFFFFF
+
+---
+
+54. OFFICIAL NAME LOCK
+
+The following brand name is permanently locked:
+
+neXa
+
+---
+
+55. BRAND CHANGE CONTROL
+
+No AI, developer, designer, social media manager, or automated system may independently change:
+
+- brand name
+- official tagline
+- core colors
+- logo identity
+
+Any change requires explicit owner approval.
+
+---
+
+56. BRAND ASSET STORAGE
+
+Recommended:
+
+assets/
+└── brand/
+    ├── logo/
+    ├── favicon/
+    ├── social/
+    ├── templates/
+    └── guidelines/
+
+Keep official assets organized.
+
+---
+
+57. VERSION CONTROL
+
+Brand guideline changes must be version-controlled.
+
+Example:
+
+v1.0
+v1.1
+v2.0
+
+Major identity changes require a major version.
+
+---
+
+58. BRAND REVIEW
+
+Before publishing an important neXa asset, verify:
+
+- correct name
+- correct logo
+- correct tagline
+- correct colors
+- readable typography
+- consistent visual style
+- no misleading claims
+
+---
+
+59. BRAND CHECKLIST
+
+Before publishing:
+
+- [ ] neXa spelling correct
+- [ ] Official tagline correct
+- [ ] Core colors correct
+- [ ] Logo correct
+- [ ] No unwanted gradients
+- [ ] Typography readable
+- [ ] Visual hierarchy clear
+- [ ] Claims verified
+- [ ] Links verified
+- [ ] Mobile readability checked
+
+---
+
+60. MASTER BRAND STATEMENT
+
+neXa is a practical technology and digital solutions brand built to help people create, learn, automate, and use modern technology more effectively.
+
+neXa combines:
+
+Technology
++
 AI
-innovation
-practical work
-modern interfaces
-Avoid generic stock imagery when a more meaningful visual can be used.
-16. SOCIAL MEDIA VISUALS
-Every official social visual should maintain:
-neXa logo
-approved colors
-consistent typography
-clean layout
-strong contrast
-recognizable identity
-The platform may change the layout.
-The brand identity must remain consistent.
-17. UI VISUAL LANGUAGE
-The preferred visual language is:
-dark
-clean
-structured
-spacious
-minimal
-subtle
-technology-focused
-Avoid:
-excessive shadows
-excessive borders
-excessive animations
-excessive glass effects
-visual clutter
-18. ANIMATION
-Animation should have a purpose.
-Good uses:
-page transitions
-hover feedback
-loading states
-subtle reveal
-interaction feedback
-Avoid:
-constant motion
-distracting effects
-unnecessary parallax
-excessive bouncing
-long loading animations
-Animation must not reduce usability or performance.
-19. BRAND CONSISTENCY
-The following must remain consistent across:
-website
-mobile application
-Facebook
-Telegram
-TikTok
-Viber
-YouTube
-digital products
-documents
-advertisements
-Core identity:
++
+Web
++
+Cloud
++
+Digital Services
++
+Education
++
+Innovation
+
+into a practical digital ecosystem.
+
+---
+
+61. OFFICIAL BRAND IDENTITY
+
+Brand:
+neXa
+
+Tagline:
+Build Faster. Create Smarter.
+
+Primary:
+#0B1F3A
+
+Accent:
+#10B981
+
+Text:
+#FFFFFF
+
+Default Theme:
+Dark
+
+Design:
+Premium
+Minimal
+Modern
+Futuristic
+Practical
+
+Voice:
+Clear
+Direct
+Professional
+Helpful
+Honest
+
+---
+
+62. PERMANENT BRAND RULE
+
+Unless explicitly changed by the owner:
+
 neXa
 Build Faster. Create Smarter.
 #0B1F3A
 #10B981
 #FFFFFF
-20. NAMING RULES
-Product and service names should be:
-short
-understandable
-memorable
-professional
-Avoid unnecessary capitalization.
-Avoid random names generated only for visual effect.
-21. PRODUCT BRANDING
-Every neXa product should feel like part of the same ecosystem.
-A product may have its own name and visual emphasis, but should retain:
-neXa identity
-approved color system
-professional tone
-consistent UX principles
-22. MARKETING LANGUAGE
-Marketing must describe real value.
-Preferred:
-"Designed for..."
-"Helps you..."
-"Built to..."
-"Includes..."
-"Designed with..."
-Avoid unsupported claims such as:
-"Guaranteed success"
-"Best in the world"
-"100% guaranteed income"
-"Number one"
-"Instant success"
-unless objectively verified.
-23. BRAND TRUST
-Trust is more important than short-term promotion.
-neXa should:
-explain clearly
-show real examples
-disclose limitations
-correct mistakes
-avoid misleading claims
-protect customer information
-24. BRAND EVOLUTION
-The brand may evolve over time.
-However, changes must be deliberate.
-Do not change the brand because:
-a trend changed
-another AI suggested it
-another website looks different
-a temporary design looks attractive
-Changes should be based on:
-business strategy
-user feedback
-usability
-market positioning
-technical requirements
-25. BRAND LOCK
-Until explicitly changed, the following are official:
-Brand: neXa
-Tagline: Build Faster. Create Smarter.
-Primary: #0B1F3A
-Accent: #10B981
-Text: #FFFFFF
-Default Theme: Dark
-Design: Premium / Minimal / Modern / Futuristic
-Gradient: Not permitted by default
-END OF BRAND GUIDELINES
+Dark First
+Mobile First
+No Default Gradients
+
+These values constitute the permanent neXa core identity.
+
+---
+
+END OF neXa BRAND GUIDELINES
