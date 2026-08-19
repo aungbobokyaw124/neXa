@@ -1,39 +1,19 @@
-/* ==========================================
-   neXa Interactive Components (FAQ & Scroll Top)
-   ========================================== */
-
+/* neXa interactive UI */
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. FAQ Accordion Logic
-  const faqQuestions = $$('.nx-faq-question');
-
-  faqQuestions.forEach((question) => {
+  $$('.nx-faq-question').forEach((question) => {
     question.addEventListener('click', () => {
-      const item = question.parentElement;
-      const isActive = item.classList.contains('active');
-
-      // အခြားဖွင့်ထားသော FAQ များကို ပိတ်ခြင်း (One item open at a time)
+      const item = question.closest('.nx-faq-item');
+      if (!item) return;
+      const wasOpen = item.classList.contains('active');
       $$('.nx-faq-item').forEach((el) => el.classList.remove('active'));
-
-      if (!isActive) {
-        item.classList.add('active');
-      }
+      if (!wasOpen) item.classList.add('active');
     });
   });
 
-  // 2. Scroll To Top Button Logic
   const scrollTopBtn = $('#nx-scroll-top');
-
-  if (scrollTopBtn) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        scrollTopBtn.classList.add('visible');
-      } else {
-        scrollTopBtn.classList.remove('visible');
-      }
-    });
-
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
+  if (!scrollTopBtn) return;
+  const update = () => scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 });
